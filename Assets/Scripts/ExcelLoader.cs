@@ -41,7 +41,7 @@ public class ExcelLoader : MonoBehaviour
 
     public void ReadCSV()
     {
-
+        //Git test
         //string[] latDataStringList = System.IO.File.ReadAllLines(basePathLat);
         //string[] lonDataStringList = System.IO.File.ReadAllLines(basePathLon);
 
