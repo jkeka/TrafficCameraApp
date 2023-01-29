@@ -105,14 +105,14 @@ public class GPSManager : MonoBehaviour
             maxWait--;
         }
 
-        // Service didn't initialize in 20 seconds
+        // Case if service didn't initialize in 20 seconds
         if (maxWait < 1)
         {
             logText.text = ("GPS: Timed out");
             yield break;
         }
 
-        // Case connection failed
+        // Case if connection failed
         if (Input.location.status == LocationServiceStatus.Failed)
         {
             logText.text = ("GPS: Unable to determine device location");
